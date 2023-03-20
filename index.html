@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>URL Shortener</h1>
+      <form id="shorten-form">
+        <label for="url-input">Enter the URL you want to shorten:</label>
+        <input type="url" name="url-input" id="url-input" required />
+        <button type="submit">Shorten</button>
+      </form>
+      <div class="result-container hidden">
+        <p>Here is your shortened URL:</p>
+        <div class="result">
+          <a id="short-url" href="" target="_blank"></a>
+          <button id="copy-button">Copy</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
